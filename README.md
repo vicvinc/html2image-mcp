@@ -102,17 +102,12 @@ npm run mcp:unified
 ```
 html2image-mcp/
 ├── mcp-server.js              # 主 MCP 服务器 (推荐)
-├── mcp-wrapper.js            # MCP 包装器
-├── server.js                 # HTTP 服务器
-├── simple-api-server.js      # 简化 API 服务器
 ├── package.json              # 项目配置
 ├── README.md                 # 项目文档
 ├── LICENSE                   # MIT 许可证
 ├── .gitignore                # Git 忽略文件
 ├── .mcp.json                 # MCP 本地配置
 ├── mcp-config.json           # MCP 服务器配置
-├── .vscode/                  # VS Code 配置
-├── .claude/                  # Claude 配置
 ├── html/                     # HTML 示例文件
 ├── docs/                     # 文档
 └── generated-images/         # 输出目录
