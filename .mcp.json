@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "html2image-server": {
+      "command": "node",
+      "args": [
+        "./mcp-server.js"
+      ],
+      "env": {
+        "OUTPUT_DIR": "./generated-images",
+        "TIMEOUT": "30000",
+        "MAX_IMAGE_SIZE": "10485760",
+        "HEADLESS": "true"
+      }
+    }
+  }
+}

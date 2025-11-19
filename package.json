@@ -1,0 +1,49 @@
+{
+  "name": "html2image-mcp",
+  "version": "2.0.0",
+  "description": "HTML-to-Image MCP server with tools for AI agents - convert HTML content and capture screenshots",
+  "type": "module",
+  "main": "server.js",
+  "bin": {
+    "html2image-mcp": "./server.js"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "start:http": "node server.js --http",
+    "dev": "node --watch server.js --http",
+    "mcp": "node mcp-wrapper.js",
+    "mcp:unified": "node mcp-server-unified.js",
+    "demo": "node server.js && echo 'HTML2Image API server running with absolute path support.'"
+  },
+  "keywords": [
+    "mcp",
+    "html2image",
+    "ai",
+    "screenshot",
+    "puppeteer",
+    "model-context-protocol",
+    "claude",
+    "chatgpt",
+    "image-generation"
+  ],
+  "author": "HTML2Image MCP Team",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.20.2",
+    "express": "^5.1.0",
+    "node-fetch": "^3.3.2",
+    "puppeteer": "^23.6.0",
+    "zod": "^4.1.12"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vicvinc/html2image-mcp.git"
+  },
+  "homepage": "https://github.com/vicvinc/html2image-mcp#readme",
+  "bugs": {
+    "url": "https://github.com/vicvinc/html2image-mcp/issues"
+  }
+}
