@@ -5,15 +5,12 @@
   "type": "module",
   "main": "server.js",
   "bin": {
-    "html2image-mcp": "./server.js"
+    "html2image-mcp": "./mcp-server.js"
   },
   "scripts": {
-    "start": "node server.js",
-    "start:http": "node server.js --http",
-    "dev": "node --watch server.js --http",
-    "mcp": "node mcp-wrapper.js",
-    "mcp:unified": "node mcp-server-unified.js",
-    "demo": "node server.js && echo 'HTML2Image API server running with absolute path support.'"
+    "start": "node mcp-server.js",
+    "start:http": "node mcp-server.js --http",
+    "dev": "node --watch mcp-server.js --http",
   },
   "keywords": [
     "mcp",
